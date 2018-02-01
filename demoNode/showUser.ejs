@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title><%= title %></title>
+<meta name="description" content="First Express App- by Suroor Wijdan">
+<link href="/stylesheets/style.css" rel="stylesheet">
+</style>
+</head>
+<body>
+ 
+<table class="table table-striped table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Results</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% results.forEach(function(element) { %>
+                        <tr>
+                            <td><%=element.name%></td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+</body>
+</html>
